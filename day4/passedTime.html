@@ -21,15 +21,15 @@
   </style>
 </head>
 <body>
-  <div id="wrap">
-  <h2>지금까지 몇 일?</h2>
-  <p>개강 이후 <span id="day" class="accent"></span>일 지났습니다.</p>
-  </div>
+  <div class="wrap">
+    <h2>지금까지 몇 일?</h2>
+    <p>개강 이후 <span id="day" class="accent"></span>일 지났습니다.</p>
+  </div>  
 
   <script>
-    let today = new Date();   //현재 일
+    let today = new Date();  //현재 일
     let firstDay = new Date("2023-09-05");
-    
+
     //현재일 - 시작일
     let passedTime = today.getTime() - firstDay.getTime();
     console.log(passedTime + "ms");

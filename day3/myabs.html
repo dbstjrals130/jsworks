@@ -15,14 +15,16 @@
     <button onclick="myAbs(-12)">계산하기</button>
     <hr>
     <p id="print"></p>
+
   </div>
 
   <script>
-    function myAbs(x) {
-      if(x < 0) {
-        // document.getElementById("print").innerHTML = -x;
+    function myAbs(x){
+      if(x < 0){
+        //document.getElementById("print").innerHTML = -x;
         let p = document.getElementById("print");
-      } else { // x >= 0
+        p.innerHTML = -x;
+      }else{ //x>=0
         document.getElementById("print").innerHTML = x;
       }
     }

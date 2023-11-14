@@ -8,16 +8,15 @@
 <body>
   <script>
     //절대값 함수 정의
-    //매개변수 값이 음수이면 양수로 리턴
-    //매개변수 값이 양수이면 양수로 리턴
-    function myAbs(x) {
-      if(x < 0) {
+    //매개변수값이 음수이면 양수로 리턴
+    //매개변수값이 양수이면 양수로 리턴
+    function myAbs(x){
+      if(x < 0)
         return -x;
-      } else  // x >= 0
+      else //x>=0
         return x;
-      }
-
-    console.log(myAbs(-5));   //5
+    }
+    console.log(myAbs(-5)); //5
 
     //내장 객체(Math) 사용
     console.log(Math.abs(-5));

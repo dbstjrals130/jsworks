@@ -10,7 +10,7 @@
   </style>
 </head>
 <body>
-  <button onclick="showHide()">보이기</button>
+  <button onclick="showHide()" id="btn">보이기</button>
   <div>
     <img src="images/flower.jpg" alt="꽃" id="pic">
   </div>
@@ -24,7 +24,7 @@
       //상태를 바꿔놓아야 함
       let pic = document.getElementById("pic");
       let btn = document.getElementById("btn");
-      if(sw) { // sw=true
+      if(sw){ //sw=true
         pic.style.display = "block";
         btn.innerText = "숨기기";
         sw = false;

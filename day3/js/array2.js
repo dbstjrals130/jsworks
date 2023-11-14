@@ -13,23 +13,21 @@ console.log(num);
 //특정 요소 1개 조회
 console.log(num[0]);
 
+//수정
+num[1] = 40;
+
 //전체 요소 검색
-for(let i=0; i<num.length; i++) {
+for(let i=0; i<num.length; i++){
   console.log(num[i]);
 }
 
 //for in문 사용
-/* for(let 변수 in 배열이름) {
+/*for(let 변수 in 배열이름){
   console.log(배열이름[변수])
-} */
-console.log("for ~ in문 검색")
-for(let n in num) {
+}*/
+console.log("for ~ in문 검색");
+for(let n in num){
   console.log(num[n]);
-}
-
-
-for(let i in animal) {
-  document.write(animal[i]);
 }
 
 //연산
@@ -40,10 +38,10 @@ console.log(num[1] <= num[2]);
 //합계 및 평균
 let sum = 0;
 let avg;
-for(let i=0; i<num.length; i++) {
-  sum = sum + num[i];
+for(let i = 0; i < num.length; i++){
+  //sum = sum + num[i];
   sum += num[i];  //누적 합계
 }
-avg = sum / num.length;   //평균 = 합계 / 개수
+avg = sum / num.length;  //평균 = 합계 / 개수
 console.log(sum);
-console.log(avg);
+console.log(avg.toFixed(2));

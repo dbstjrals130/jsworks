@@ -7,11 +7,11 @@ window.onload = function(){
 
   showSlide();
 
-  function showSlide() {
+  function showSlide(){
     //이미지 경로 - src 속성 사용
     document.getElementById("pic").src = picture[picIdx];
     picIdx += 1;
-    if(picIdx == picture.length) {
+    if(picIdx == picture.length){
       picIdx = 0;
     }
     setTimeout(showSlide, 2000);
